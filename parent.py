@@ -72,8 +72,8 @@ class Student:
 
 #child class
 class One(Student):
-    def __init__(self,teacher,subject,number_student):
-        self.number_student = number_student
+    def __init__(self,teacher,subject,number):
+        self.number = number
 
         Student.__init__(self,teacher,subject)
 
@@ -81,12 +81,11 @@ class One(Student):
         print("My class teachers name is {}".format(self.teacher))
         print("I offer these subject {}".format(self.subject))
         
-        print("number_student:{}".format(self.number_student))
+        print("number_students:{}".format(self.number))
 
 y = One("Treasure","english",76)
 y.show()
 y.display()
-    
 
 
 
